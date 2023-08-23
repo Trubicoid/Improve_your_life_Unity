@@ -7,7 +7,7 @@ public class susyscript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        bool x = true;
     }
 
     // Update is called once per frame
