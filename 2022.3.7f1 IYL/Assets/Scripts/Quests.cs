@@ -1,17 +1,38 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class SUS : MonoBehaviour
+public class Quests : MonoBehaviour
 {
+    public Temporatyquestcaller gameEvent;
+    public Temporatyquestcaller questcalled;
+
+    UnityEvent response;
 
 
 
-    public bool quest_completed = false;
-    public static List<SUS> AvailableAs = new List<SUS>();
+    private void loop()
+    {
+        questcalled.Raise();
+    }
+    private void OnEnable()
+    {
+        gameEvent.RegisterListener(this);
+    }
 
-    
+    private void OnDisable()
+    {
+        gameEvent.UnregisterListener(this);
+    }
+
+    public void OnEventRaised()
+    {
+        response.Invoke(); 
+    }
+
     // Start is called before the first frame update
     void Start()
     {
