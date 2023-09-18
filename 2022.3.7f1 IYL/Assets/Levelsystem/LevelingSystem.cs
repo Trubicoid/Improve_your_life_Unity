@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class LevelUpSystem : MonoBehaviour
 {
@@ -19,13 +20,13 @@ public class LevelUpSystem : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space))
-       {
-          GainXP(1);
-      }
+        //if (Input.GetKeyDown(KeyCode.Space))
+      // {
+          //GainXP(1);
+     // }
     }
 
-
+    
    
 
     private void GainXP(int amount)
@@ -59,7 +60,6 @@ public class LevelUpSystem : MonoBehaviour
     //EVENT SYSTEM DO NOT TOUCH!
     public void Questcompleted(Component sender, object data)
     {
-        Debug.Log("got data");
         if(data is int)
         {
             int lvl_up = (int)data;
