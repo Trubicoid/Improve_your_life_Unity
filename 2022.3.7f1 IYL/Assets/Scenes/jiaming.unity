@@ -519,6 +519,7 @@ GameObject:
   - component: {fileID: 765274639}
   - component: {fileID: 765274641}
   - component: {fileID: 765274640}
+  - component: {fileID: 765274642}
   m_Layer: 5
   m_Name: Border
   m_TagString: Untagged
@@ -583,6 +584,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765274638}
   m_CullTransparentMesh: 1
+--- !u!114 &765274642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765274638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e818602d3e17a01458127d3150a19d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxExp: 100
+  currentExp: 0
+  xpbarre: {fileID: 0}
 --- !u!1 &1322866033
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,6 +777,7 @@ GameObject:
   - component: {fileID: 1667825591}
   - component: {fileID: 1667825593}
   - component: {fileID: 1667825592}
+  - component: {fileID: 1667825594}
   m_Layer: 5
   m_Name: quest_text_UI
   m_TagString: Untagged
@@ -884,6 +901,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667825590}
   m_CullTransparentMesh: 1
+--- !u!114 &1667825594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667825590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e818602d3e17a01458127d3150a19d4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxExp: 100
+  currentExp: 40
+  xpbarre: {fileID: 0}
 --- !u!1 &1669356767
 GameObject:
   m_ObjectHideFlags: 0
