@@ -9,12 +9,16 @@ public class quest : MonoBehaviour
     int xp_gain = 10;
     public TMP_Text quest_text_UI;
     private string quest_text;
-    private int quest_id;
+    private int quest_id = 0;
+    public static List<string> different_quests=new List<string>();
 
 
     void Start()
     {
-        
+        different_quests.Add("gkys");
+        different_quests.Add("gfys");
+        different_quests.Add("i hope you die");
+        different_quests.Add("hello why are you gae");
     }
 
     // Update is called once per frame
@@ -23,6 +27,7 @@ public class quest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             loadquest(quest_id);
+            quest_id++;
             showquest();
             questcompleted();
         }
@@ -30,7 +35,15 @@ public class quest : MonoBehaviour
 
     private void loadquest(int quest_id)
     {
-        quest_text = "gkys" + " \n reward:" + xp_gain + "xp";
+        if (different_quests.Count - 1 >= quest_id)
+        {
+            quest_text = different_quests[quest_id] + "\nreward:" + xp_gain + "xp";
+        }
+        else
+        {
+            quest_text = "no more quests";
+        }
+        Debug.Log(quest_id);
     }
 
     private void showquest()
