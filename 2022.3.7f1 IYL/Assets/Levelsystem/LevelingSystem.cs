@@ -10,7 +10,7 @@ public class LevelUpSystem : MonoBehaviour
 
     private int currentLevel = 1;
     private int currentXP = 0;
-    private int xpToLevelUp = 10;
+    private int xpToLevelUp = 100;
 
     private void Start()
     {
