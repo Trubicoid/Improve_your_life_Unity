@@ -15,7 +15,7 @@ public class LevelBarITis : MonoBehaviour
     void Start()
     {
         currentExp = maxExp;
-        xpbarre.SetMinExp(maxExp);
+       // xpbarre.SetMinExp(maxExp);
     }
 
     // Update is called once per frame

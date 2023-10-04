@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/jiaming.unity
+    guid: da8210ca828b1f0489bbfc4cdf5f4ddc
+  - enabled: 1
+    path: Assets/Scenes/Quest menu 1.unity
+    guid: f0b9c516fb8b93b468405a9dd3190be7
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 1f31b81cff69b0a4b80454f410f783db, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 8cc108579e5c62840b0c9ee4159bbec9, type: 2}
