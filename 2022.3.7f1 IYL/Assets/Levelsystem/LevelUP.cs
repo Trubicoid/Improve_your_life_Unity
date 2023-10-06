@@ -8,7 +8,6 @@ public class LevelUP : MonoBehaviour
 {
     public Slider slider;
     int flowingxp = 0;
-    int lululul = 100;
 
     //public void SetMinExp(int xp)
     //{
@@ -20,21 +19,22 @@ public class LevelUP : MonoBehaviour
     {
        slider.value = 0;
        slider.maxValue = 100;
+        Debug.Log("start");
 
 
     }
     public void Update()
     {
-        slider.maxValue = lululul;
+        
         flowingxp = StaticString.Xpforcompletion;
         slider.value = flowingxp;
         if (slider.value >= slider.maxValue)
         {
             slider.maxValue += 10;
-            lululul += 10;
             //slider.value = 0;
+            Debug.Log(slider.maxValue);
             StaticString.Xpforcompletion = 0;
-            LevelUp();
+            //LevelUp();
         }
     }
     public void SetXP(int xp)

@@ -11,6 +11,6 @@ public class CompletedQuest : MonoBehaviour
     public void completion()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-        StaticString.Xpforcompletion += 10;
+        StaticString.Xpforcompletion += 50;
     }
 }
