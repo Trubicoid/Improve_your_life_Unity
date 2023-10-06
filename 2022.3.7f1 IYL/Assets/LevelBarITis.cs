@@ -30,6 +30,7 @@ public class LevelBarITis : MonoBehaviour
     private void GainErfahrung(int amount)
     {
         currentExp += amount;
+        currentExp += StaticString.Xpforcompletion;
         xpbarre.SetXP(currentExp);
         CheckForLevelUp();
         //UpdateUI();

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
 
-public class LevelUpSystem : MonoBehaviour
+public class LevelingSystem : MonoBehaviour
 {
     public TMP_Text levelText;
     public TMP_Text xpText;

@@ -53,8 +53,9 @@ public class quest : MonoBehaviour
 
 
 
-    private void questcompleted()
+    public void questcompleted()
     {
+        
         quest_completed.Raise(this, xp_gain);
         Debug.Log("Raised");
     }

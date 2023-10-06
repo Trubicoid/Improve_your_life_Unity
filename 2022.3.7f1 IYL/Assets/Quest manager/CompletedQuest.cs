@@ -4,16 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class CompletedQuest : MonoBehaviour
 {
-    
-public void playGame() 
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    } 
-    public void Back() 
+    //int po;
+    //public LevelingSystem levelUpSystem;
+    public void completion()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        StaticString.Xpforcompletion += 10;
     }
-    
 }
