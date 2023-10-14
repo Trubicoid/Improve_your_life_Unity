@@ -23,7 +23,8 @@ public class LevelBarITis : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            GainErfahrung(10);
+            //GainErfahrung(10);
+            StaticString.Xpforcompletion += 50;
         }
     }
     //////////////////////////////////////////////////////////

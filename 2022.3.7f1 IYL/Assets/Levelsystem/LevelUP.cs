@@ -18,7 +18,8 @@ public class LevelUP : MonoBehaviour
     public void Start()
     {
        slider.value = 0;
-       slider.maxValue = 100;
+       slider.maxValue = maxValstatic.slidermaxvaluE;
+        //slider.maxValue = 100;
         Debug.Log("start");
 
 
@@ -28,11 +29,13 @@ public class LevelUP : MonoBehaviour
         
         flowingxp = StaticString.Xpforcompletion;
         slider.value = flowingxp;
+        
         if (slider.value >= slider.maxValue)
         {
-            slider.maxValue += 10;
+            maxValstatic.slidermaxvaluE += 10;
             //slider.value = 0;
             Debug.Log(slider.maxValue);
+            LvlTextStatic.LvlTxt += 1;
             StaticString.Xpforcompletion = 0;
             //LevelUp();
         }

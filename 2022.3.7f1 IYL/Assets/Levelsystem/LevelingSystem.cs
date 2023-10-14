@@ -19,11 +19,12 @@ public class LevelingSystem : MonoBehaviour
 
     private void Update()
     {
-
+        levelText.text = "Level: " + LvlTextStatic.LvlTxt;
+        xpText.text = "XP: " + StaticString.Xpforcompletion;
         //if (Input.GetKeyDown(KeyCode.Space))
-      // {
-          //GainXP(1);
-     // }
+        // {
+        //GainXP(1);
+        // }
     }
 
     
