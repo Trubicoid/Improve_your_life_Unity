@@ -47,8 +47,11 @@ public class LevelingSystem : MonoBehaviour
 
     private void LevelUp()
     {
+        if (currentXP > xpToLevelUp)
+        {
+            currentXP = (currentXP - xpToLevelUp);
+        }
         currentLevel++;
-        currentXP = 0;
         xpToLevelUp += 10;
     }
 

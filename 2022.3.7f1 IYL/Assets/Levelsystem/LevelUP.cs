@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
-
+using Unity.VisualScripting;
 
 public class LevelUP : MonoBehaviour
 {
@@ -30,13 +30,22 @@ public class LevelUP : MonoBehaviour
         flowingxp = StaticString.Xpforcompletion;
         slider.value = flowingxp;
         
-        if (slider.value >= slider.maxValue)
+        if (slider.value == slider.maxValue)
         {
+            if (StaticString.Xpforcompletion > slider.maxValue)
+            {
+                StaticString.Xpforcompletion = StaticString.Xpforcompletion - (int)slider.maxValue;
+                Debug.Log(StaticString.Xpforcompletion);
+            }
+            else
+            {
+                StaticString.Xpforcompletion = 0;
+            }
             maxValstatic.slidermaxvaluE += 10;
             //slider.value = 0;
             Debug.Log(slider.maxValue);
             LvlTextStatic.LvlTxt += 1;
-            StaticString.Xpforcompletion = 0;
+            //StaticString.Xpforcompletion=0;
             //LevelUp();
         }
     }
