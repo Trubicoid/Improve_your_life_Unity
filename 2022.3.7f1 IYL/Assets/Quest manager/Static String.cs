@@ -6,6 +6,9 @@ public class StaticString : MonoBehaviour
 {
     public static int Xpforcompletion;
 
+    public static int quest_id_daily_1=-1;
+    public static int quest_id_daily_2=-1;
+
     public static bool Daily_1;
     public static bool Daily_2;
 

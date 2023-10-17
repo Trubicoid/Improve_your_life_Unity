@@ -7,10 +7,13 @@ public class NeuesScipt : MonoBehaviour
 {
 public void Dailyhin() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        StaticString.Daily_2 = true;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
     } 
-    public void DailyBack() 
+public void DailyBack() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        StaticString.Daily_2 = false;
+        Debug.LogWarning("D2 False");
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
     }
 }

@@ -16,26 +16,32 @@ public class CompletedQuest : MonoBehaviour
         if (StaticString.Daily_1)
         {
             StaticString.Daily_1_completed = true;
+            StaticString.Daily_1 = false;
         }
         if (StaticString.Daily_2)
         {
             StaticString.Daily_2_completed = true;
+            StaticString.Daily_2 = false;
         }
         if (StaticString.Weekly_1)
         {
             StaticString.Weekly_1_completed = true;
+            StaticString.Weekly_1 = false;
         }
         if (StaticString.Weekly_2)
         {
             StaticString.Weekly_2_completed = true;
+            StaticString.Weekly_2 = false;
         }
         if (StaticString.Weekly_3)
         {
             StaticString.Weekly_3_completed = true;
+            StaticString.Weekly_3 = false;
         }
         if (StaticString.Weekly_4)
         {
             StaticString.Weekly_4_completed = true;
+            StaticString.Weekly_4 = false;
         }
     }
 }
