@@ -7,10 +7,19 @@ public class Weekly2 : MonoBehaviour
 {
 public void Dailyhin() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        StaticString.Weekly_2 = true;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+        SceneManager.LoadScene("Daily_Quests");
     } 
     public void DailyBack() 
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+        StaticString.Daily_1 = false;
+        StaticString.Daily_2 = false;
+        StaticString.Weekly_1 = false;
+        StaticString.Weekly_2 = false;
+        StaticString.Weekly_3 = false;
+        StaticString.Weekly_4 = false;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+        SceneManager.LoadScene("jiaming");
     }
 }
