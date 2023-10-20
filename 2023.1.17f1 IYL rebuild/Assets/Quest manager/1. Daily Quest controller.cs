@@ -21,8 +21,7 @@ public void Back()
         StaticString.Weekly_2 = false;
         StaticString.Weekly_3 = false;
         StaticString.Weekly_4 = false;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
-        SceneManager.LoadScene("jiaming");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
     }
     
 }
