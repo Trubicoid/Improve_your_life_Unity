@@ -17,16 +17,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/2. Daily quest.unity
     guid: dd4fa8d551772dd4e9aceab5b61f4249
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1. Weekly Quest.unity
     guid: b5487d9041b585244ad13164bc499077
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/2. Weekly Quest.unity
     guid: e628b636b0b9aa748a663af0fbf29bdb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3. Weekly Quest.unity
     guid: 98212a6a471dbe94d91b92d0741d00ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/4. Weekly Quest.unity
     guid: b656537fc44514547adeb68fa18b5fee
   - enabled: 1
