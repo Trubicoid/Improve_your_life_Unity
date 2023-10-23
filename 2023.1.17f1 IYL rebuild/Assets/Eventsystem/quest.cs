@@ -6,19 +6,25 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.Networking;
+using System;
 
 public class quest : MonoBehaviour
 {
     public GameEvent quest_completed;
     int xp_gain = 33;
     int xp_gain_weekly = 70;
-    private int quest_type;
+    private int quest_type = -1;
     public TMP_Text quest_text_UI;
     private string quest_text;
     private int quest_id;
-    public static List<string> different_quests=new List<string> { "gkys", "gfys" , "i hope you die", "hello why are you gae", "sorry no more quests"};
-    public static List<string> different_weekly_quests = new List<string> { "pls go home", "Haha lol", "Chock Mock Schmock", "Suiiiiii", "hellooooooo, moooo, noooo", " Sorry no more quests" };
-    public static List<int> used_quests = new List<int> { -1};
+    //public static List<string> different_quests=new List<string> { "gkys", "gfys" , "i hope you die", "hello why are you gae", "sorry no more quests"};
+    //public static List<string> different_weekly_quests = new List<string> { "pls go home", "Haha lol", "Chock Mock Schmock", "Suiiiiii", "hellooooooo, moooo, noooo", " Sorry no more quests" };
+    //public static List<int> used_quests = new List<int> { -1};
+    private List<string> different_quests = StaticString.different_quests;
+    private List<string> different_weekly_quests = StaticString.different_weekly_quests;
+    private List<int> used_quests = StaticString.used_quests;
+    private List<int> used_weekly_quests = StaticString.used_weekly_quests;
 
     public InputField d1;
     public InputField d2;
@@ -27,13 +33,15 @@ public class quest : MonoBehaviour
     public InputField w3;
     public InputField w4;
 
+    public string xpInputField = StaticString.Xpforcompletion.ToString();
+    public string lvlInputField = StaticString.LVL.ToString();
+
 
 
     void Start()
     {
-        loadjason_quest_activ();
-        loadjason_quest_used();
-
+        //LoadFromJson();
+        checkTime();
         if (StaticString.Daily_1)
         {
             quest_type = 1;
@@ -51,7 +59,7 @@ public class quest : MonoBehaviour
                 {
                     while (used_quests.Contains(StaticString.quest_id_daily_1))
                     {
-                        StaticString.quest_id_daily_1 = Random.Range(0, different_quests.Count - 1);
+                        StaticString.quest_id_daily_1 = UnityEngine.Random.Range(0, different_quests.Count - 1);
                     }
                     used_quests.Add(StaticString.quest_id_daily_1);
                 }
@@ -75,7 +83,7 @@ public class quest : MonoBehaviour
                 {
                     while (used_quests.Contains(StaticString.quest_id_daily_2))
                     {
-                        StaticString.quest_id_daily_2 = Random.Range(0, different_quests.Count - 1);
+                        StaticString.quest_id_daily_2 = UnityEngine.Random.Range(0, different_quests.Count - 1);
                     }
                     used_quests.Add(StaticString.quest_id_daily_2);
                 }
@@ -91,17 +99,17 @@ public class quest : MonoBehaviour
             }
             else
             {
-                if (used_quests.Count == different_weekly_quests.Count)
+                if (used_weekly_quests.Count == different_weekly_quests.Count)
                 {
                     StaticString.quest_id_weekly_1 = different_weekly_quests.Count;
                 }
                 else
                 {
-                    while (used_quests.Contains(StaticString.quest_id_weekly_1))
+                    while (used_weekly_quests.Contains(StaticString.quest_id_weekly_1))
                     {
-                        StaticString.quest_id_weekly_1 = Random.Range(0, different_weekly_quests.Count - 1);
+                        StaticString.quest_id_weekly_1 = UnityEngine.Random.Range(0, different_weekly_quests.Count - 1);
                     }
-                    used_quests.Add(StaticString.quest_id_weekly_1);
+                    used_weekly_quests.Add(StaticString.quest_id_weekly_1);
                 }
                 quest_id = StaticString.quest_id_weekly_1;
             }
@@ -115,17 +123,17 @@ public class quest : MonoBehaviour
             }
             else
             {
-                if (used_quests.Count == different_weekly_quests.Count)
+                if (used_weekly_quests.Count == different_weekly_quests.Count)
                 {
                     StaticString.quest_id_weekly_2 = different_weekly_quests.Count;
                 }
                 else
                 {
-                    while (used_quests.Contains(StaticString.quest_id_weekly_2))
+                    while (used_weekly_quests.Contains(StaticString.quest_id_weekly_2))
                     {
-                        StaticString.quest_id_weekly_2 = Random.Range(0, different_weekly_quests.Count - 1);
+                        StaticString.quest_id_weekly_2 = UnityEngine.Random.Range(0, different_weekly_quests.Count - 1);
                     }
-                    used_quests.Add(StaticString.quest_id_weekly_2);
+                    used_weekly_quests.Add(StaticString.quest_id_weekly_2);
                 }
                 quest_id = StaticString.quest_id_weekly_2;
             }
@@ -139,17 +147,17 @@ public class quest : MonoBehaviour
             }
             else
             {
-                if (used_quests.Count == different_weekly_quests.Count)
+                if (used_weekly_quests.Count == different_weekly_quests.Count)
                 {
                     StaticString.quest_id_weekly_3 = different_weekly_quests.Count;
                 }
                 else
                 {
-                    while (used_quests.Contains(StaticString.quest_id_weekly_3))
+                    while (used_weekly_quests.Contains(StaticString.quest_id_weekly_3))
                     {
-                        StaticString.quest_id_weekly_3 = Random.Range(0, different_weekly_quests.Count - 1);
+                        StaticString.quest_id_weekly_3 = UnityEngine.Random.Range(0, different_weekly_quests.Count - 1);
                     }
-                    used_quests.Add(StaticString.quest_id_weekly_3);
+                    used_weekly_quests.Add(StaticString.quest_id_weekly_3);
                 }
                 quest_id = StaticString.quest_id_weekly_3;
             }
@@ -163,25 +171,27 @@ public class quest : MonoBehaviour
             }
             else
             {
-                if (used_quests.Count == different_weekly_quests.Count)
+                if (used_weekly_quests.Count == different_weekly_quests.Count)
                 {
                     StaticString.quest_id_weekly_4 = different_weekly_quests.Count;
                 }
                 else
                 {
-                    while (used_quests.Contains(StaticString.quest_id_weekly_4))
+                    while (used_weekly_quests.Contains(StaticString.quest_id_weekly_4))
                     {
-                        StaticString.quest_id_weekly_4 = Random.Range(0, different_weekly_quests.Count - 1);
+                        StaticString.quest_id_weekly_4 = UnityEngine.Random.Range(0, different_weekly_quests.Count - 1);
                     }
-                    used_quests.Add(StaticString.quest_id_weekly_4);
+                    used_weekly_quests.Add(StaticString.quest_id_weekly_4);
                 }
                 quest_id = StaticString.quest_id_weekly_4;
             }
         }
-        loadquest(quest_id);
-        writejason_quest_activ();
-        writejason_quest_used();
-        showquest();
+        Debug.Log(quest_id);
+        if (quest_type != -1)
+        {
+            loadquest(quest_id);
+            showquest();
+        }
     }
 
     // Update is called once per frame
@@ -251,34 +261,38 @@ public class quest : MonoBehaviour
                 quest_text = "no more quests";
             }
         }
-        Debug.Log(quest_id);
     }
-
+    private void checkTime()
+    {
+        Debug.Log(StaticString.date);
+    }
     private void showquest()
     {
         quest_text_UI.text = quest_text;
     }
 
-    private void loadjason_quest_activ()
+    public void SaveToJason()
     {
+        xpInputField = StaticString.Xpforcompletion.ToString();
+        lvlInputField = StaticString.LVL.ToString();
+        Data_save data = new Data_save();
+        data.xp = xpInputField;
+        data.lvl = lvlInputField;
+
+        string json = JsonUtility.ToJson(data, true);
+        File.WriteAllText(Application.dataPath + "/SaveDataFile.json", json);
 
     }
 
-    private void loadjason_quest_used()
+    public void LoadFromJson()
     {
+        string json = File.ReadAllText(Application.dataPath + "/SaveDataFile.json");
+        Data_save data = JsonUtility.FromJson<Data_save>(json);
 
-    }
-
-
-    private void writejason_quest_activ()
-    {
-
-
-    }
-
-    private void writejason_quest_used()
-    {
-
+        xpInputField = data.xp;
+        lvlInputField = data.lvl;
+        StaticString.Xpforcompletion = int.Parse(xpInputField);
+        StaticString.LVL = int.Parse(lvlInputField);
     }
 
     public void questcompleted()
@@ -291,6 +305,7 @@ public class quest : MonoBehaviour
             {
                 StaticString.Xpforcompletion += xp_gain;
                 Debug.Log("Raised");
+                //SaveToJason();
             }
         }
 
@@ -300,8 +315,11 @@ public class quest : MonoBehaviour
             {
                 StaticString.Xpforcompletion += xp_gain_weekly;
                 Debug.Log("Raised");
+                //SaveToJason();
             }
         }
         SceneManager.LoadScene("jiaming");
     }
+
+
 }

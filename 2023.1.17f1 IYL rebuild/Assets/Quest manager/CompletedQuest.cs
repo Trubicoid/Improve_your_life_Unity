@@ -41,5 +41,6 @@ public class CompletedQuest : MonoBehaviour
             StaticString.Weekly_4_completed = true;
             StaticString.Weekly_4 = false;
         }
+        StaticString.startup = false;
     }
 }

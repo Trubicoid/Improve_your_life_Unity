@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using System.IO;
 
 public class LevelingSystem : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class LevelingSystem : MonoBehaviour
     private int currentLevel = 1;
     private int currentXP = 0;
     private int xpToLevelUp = 100;
+    private int temp_xp = 0;
+
+    public string xpInputField = StaticString.Xpforcompletion.ToString();
+    public string lvlInputField = StaticString.LVL.ToString();
 
     private void Start()
     {
@@ -19,7 +24,7 @@ public class LevelingSystem : MonoBehaviour
 
     private void Update()
     {
-        levelText.text = "Level: " + LvlTextStatic.LvlTxt;
+        levelText.text = "Level: " + StaticString.LVL;
         xpText.text = "XP: " + StaticString.Xpforcompletion;
         //if (Input.GetKeyDown(KeyCode.Space))
         // {
@@ -60,6 +65,8 @@ public class LevelingSystem : MonoBehaviour
         levelText.text = "Level: " + currentLevel;
         xpText.text = "XP: " + currentXP + " / " + xpToLevelUp;
     }
+
+
 
     //EVENT SYSTEM DO NOT TOUCH!
     public void Questcompleted(Component sender, object data)

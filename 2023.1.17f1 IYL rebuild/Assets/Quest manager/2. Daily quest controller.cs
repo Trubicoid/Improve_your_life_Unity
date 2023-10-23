@@ -16,5 +16,6 @@ public void DailyBack()
         StaticString.Daily_2 = false;
         Debug.LogWarning("D2 False");
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
+        StaticString.startup = false;
     }
 }

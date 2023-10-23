@@ -982,6 +982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669356769}
   - component: {fileID: 1669356768}
+  - component: {fileID: 1669356770}
   m_Layer: 0
   m_Name: Quest
   m_TagString: Untagged
@@ -1001,8 +1002,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8a7c70349498aa4d9acad1f9991b863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  globalTime: {fileID: 0}
   quest_completed: {fileID: 11400000, guid: 65d53b66dfa81d44f940a0999476b22d, type: 2}
   quest_text_UI: {fileID: 216769739}
+  d1: {fileID: 0}
+  d2: {fileID: 0}
+  w1: {fileID: 0}
+  w2: {fileID: 0}
+  w3: {fileID: 0}
+  w4: {fileID: 0}
+  xpInputField: 0
+  lvlInputField: 0
 --- !u!4 &1669356769
 Transform:
   m_ObjectHideFlags: 0
@@ -1018,6 +1028,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669356770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669356767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3e7af8eb4e23f49ad91a81ecca1899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1828109204
 GameObject:
   m_ObjectHideFlags: 0
