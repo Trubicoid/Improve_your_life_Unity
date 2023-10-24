@@ -21,7 +21,7 @@ public class LevelUP : MonoBehaviour
 
     public void Start()
     {
-        StaticString.different_quests = new List<string> { "gkys", "gfys", "i hope you die", "hello why are you gae", "sorry no more quests" };
+        StaticString.different_quests = new List<string> { "fox", "Vogel", "Schmetterling", "Elefant", "Bär", "sorry no more quests" };
         StaticString.different_weekly_quests = new List<string> { "pls go home", "Haha lol", "Chock Mock Schmock", "Suiiiiii", "hellooooooo, moooo, noooo", " Sorry no more quests" };
         if (StaticString.startup)
         {

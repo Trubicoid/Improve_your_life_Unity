@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      animal-8318650_0: 8801770943241234320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

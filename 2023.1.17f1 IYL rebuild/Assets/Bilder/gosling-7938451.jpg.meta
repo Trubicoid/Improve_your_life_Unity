@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gosling-7938451_0: 4165471877072151250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

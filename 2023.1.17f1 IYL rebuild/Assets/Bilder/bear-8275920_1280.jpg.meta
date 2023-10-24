@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6236b3b62cc4c6f4794c17b88333237d
+guid: 6baf73ffdd682914f80c84a9b7e63df8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3116078942458824259
-    second: compass-8324516_0
+      213: -459857679525275366
+    second: bear-8275920_1280_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: compass-8324516_0
+      name: bear-8275920_1280_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4608
-        height: 3456
+        width: 1280
+        height: 919
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db9baa626b671c4d0800000000000000
-      internalID: -3116078942458824259
+      spriteID: a1919ac70e14e99f0800000000000000
+      internalID: -459857679525275366
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      compass-8324516_0: -3116078942458824259
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
