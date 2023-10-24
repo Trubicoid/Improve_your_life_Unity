@@ -27,7 +27,7 @@ public class LevelUP : MonoBehaviour
         {
             LoadFromJson();
         }
-
+        maxValstatic.slidermaxvaluE = 100 + StaticString.LVL * 10;
         slider.value = 0;
         slider.maxValue = maxValstatic.slidermaxvaluE;
         //slider.maxValue = 100;
