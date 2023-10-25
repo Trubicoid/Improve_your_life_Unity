@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butterfly-8233505_1280_0: -3840385073134492790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

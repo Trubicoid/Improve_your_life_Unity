@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      elephant-8253639_1280_0: 4607488452630758890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
