@@ -322,8 +322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0019608, y: 410.58}
-  m_SizeDelta: {x: 615.29, y: 50}
+  m_AnchoredPosition: {x: -0.0039063, y: 399.85}
+  m_SizeDelta: {x: 615.29, y: 71.4624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167953864
 MonoBehaviour:
@@ -372,8 +372,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -528,6 +528,8 @@ MonoBehaviour:
   slider: {fileID: 238107945}
   xpInputField: 0
   lvlInputField: 0
+  levelText: {fileID: 0}
+  xpText: {fileID: 0}
 --- !u!1 &283416029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3000,7 @@ GameObject:
   - component: {fileID: 1538432507}
   - component: {fileID: 1538432509}
   - component: {fileID: 1538432508}
+  - component: {fileID: 1538432510}
   m_Layer: 0
   m_Name: Image (1)
   m_TagString: Untagged
@@ -3062,6 +3065,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538432506}
   m_CullTransparentMesh: 1
+--- !u!114 &1538432510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538432506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1001977e56b15da488ea85f9f54a7167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_image: {fileID: -3684065299042249889, guid: 26ef10dd8c73df043b7dd7bfe05a37b9, type: 3}
+  new_image1: {fileID: 4489120971619060283, guid: 95688de085830f44889dd3c699ff86c5, type: 3}
+  new_image2: {fileID: -3840385073134492790, guid: 9318b56538c5fd548bab6dd5f24787a7, type: 3}
+  new_image3: {fileID: 4607488452630758890, guid: 1c9add408432489409985f8a7cc3c5ab, type: 3}
+  new_image4: {fileID: -459857679525275366, guid: 6baf73ffdd682914f80c84a9b7e63df8, type: 3}
 --- !u!1 &1568010124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,6 +4384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8d9efdaa5a35b941845f9bdae6cca3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelText: {fileID: 167953864}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

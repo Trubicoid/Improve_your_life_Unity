@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class quest_mainpage : MonoBehaviour
 {
+    public TMP_Text levelText;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         Debug.Log(StaticString.quest_id_daily_1);
         Debug.Log(StaticString.quest_id_daily_2);
         Debug.Log(StaticString.quest_id_weekly_1);
@@ -122,7 +125,9 @@ public class quest_mainpage : MonoBehaviour
                     StaticString.quest_id_weekly_4 = UnityEngine.Random.Range(0, StaticString.different_weekly_quests.Count - 1);
                 }
                 StaticString.used_weekly_quests.Add(StaticString.quest_id_weekly_4);
+
             }
         }
+        levelText.text = StaticString.different_quests[StaticString.quest_id_daily_1];
     }
 }
