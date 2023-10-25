@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
 using System.IO;
+using TMPro;
 
 public class LevelUP : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class LevelUP : MonoBehaviour
     public string xpInputField = StaticString.Xpforcompletion.ToString();
     public string lvlInputField = StaticString.LVL.ToString();
     int temp_xp = 0;
+    public TMP_Text levelText;
+    public TMP_Text xpText;
 
     //public void SetMinExp(int xp)
     //{
