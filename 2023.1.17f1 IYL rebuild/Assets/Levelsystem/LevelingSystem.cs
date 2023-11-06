@@ -25,7 +25,7 @@ public class LevelingSystem : MonoBehaviour
     private void Update()
     {
         levelText.text = "Level: " + StaticString.LVL;
-        xpText.text = "XP: " + StaticString.Xpforcompletion;
+        xpText.text = "XP: " + StaticString.Xpforcompletion + "/" + 100 + StaticString.LVL * 10;
         //if (Input.GetKeyDown(KeyCode.Space))
         // {
         //GainXP(1);
