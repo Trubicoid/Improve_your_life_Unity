@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yone_0_0: 9216946059569220262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
