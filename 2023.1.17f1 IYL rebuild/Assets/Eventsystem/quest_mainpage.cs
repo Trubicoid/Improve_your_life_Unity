@@ -16,12 +16,6 @@ public class quest_mainpage : MonoBehaviour
     void Update()
     {
         
-        Debug.Log(StaticString.quest_id_daily_1);
-        Debug.Log(StaticString.quest_id_daily_2);
-        Debug.Log(StaticString.quest_id_weekly_1);
-        Debug.Log(StaticString.quest_id_weekly_2);
-        Debug.Log(StaticString.quest_id_weekly_3);
-        Debug.Log(StaticString.quest_id_weekly_4);
         if (StaticString.quest_id_daily_1 == -1)
         {
             if (StaticString.used_quests.Count == StaticString.different_quests.Count)
