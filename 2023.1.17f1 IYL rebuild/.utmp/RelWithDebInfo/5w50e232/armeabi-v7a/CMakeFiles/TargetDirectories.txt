@@ -1,0 +1,5 @@
+C:/Users/trubi/Desktop/Improve_your_life_Unity/2022.3.7f1 IYL rebuild/.utmp/RelWithDebInfo/5w50e232/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/trubi/Desktop/Improve_your_life_Unity/2022.3.7f1 IYL rebuild/.utmp/RelWithDebInfo/5w50e232/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/trubi/Desktop/Improve_your_life_Unity/2022.3.7f1 IYL rebuild/.utmp/RelWithDebInfo/5w50e232/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/trubi/Desktop/Improve_your_life_Unity/2022.3.7f1 IYL rebuild/.utmp/RelWithDebInfo/5w50e232/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/trubi/Desktop/Improve_your_life_Unity/2022.3.7f1 IYL rebuild/.utmp/RelWithDebInfo/5w50e232/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
