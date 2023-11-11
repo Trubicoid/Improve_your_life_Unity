@@ -1,5 +1,0 @@
-C:/Users/trubi/Documents/GitHub/Improve_your_life_Unity/2023.1.17f1 IYL rebuild/.utmp/RelWithDebInfo/c2u6g5b4/arm64-v8a/CMakeFiles/edit_cache.dir
-C:/Users/trubi/Documents/GitHub/Improve_your_life_Unity/2023.1.17f1 IYL rebuild/.utmp/RelWithDebInfo/c2u6g5b4/arm64-v8a/CMakeFiles/rebuild_cache.dir
-C:/Users/trubi/Documents/GitHub/Improve_your_life_Unity/2023.1.17f1 IYL rebuild/.utmp/RelWithDebInfo/c2u6g5b4/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
-C:/Users/trubi/Documents/GitHub/Improve_your_life_Unity/2023.1.17f1 IYL rebuild/.utmp/RelWithDebInfo/c2u6g5b4/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
-C:/Users/trubi/Documents/GitHub/Improve_your_life_Unity/2023.1.17f1 IYL rebuild/.utmp/RelWithDebInfo/c2u6g5b4/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
