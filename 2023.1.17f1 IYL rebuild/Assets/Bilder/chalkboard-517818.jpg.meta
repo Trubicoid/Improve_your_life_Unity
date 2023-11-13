@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chalkboard-517818_0: 8492618049218535846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
