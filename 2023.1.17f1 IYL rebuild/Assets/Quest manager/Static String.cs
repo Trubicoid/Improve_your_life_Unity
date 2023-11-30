@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,13 @@ public class StaticString : MonoBehaviour
     public static int quest_id_weekly_2 = -1;
     public static int quest_id_weekly_3 = -1;
     public static int quest_id_weekly_4 = -1;
+
+    public static DateTime dateCurrent_daily_1 = DateTime.Now;
+    public static DateTime dateCurrent_daily_2 = DateTime.Now;
+    public static DateTime dateCurrent_weekly_1 = DateTime.Now;
+    public static DateTime dateCurrent_weekly_2 = DateTime.Now;
+    public static DateTime dateCurrent_weekly_3 = DateTime.Now;
+    public static DateTime dateCurrent_weekly_4 = DateTime.Now;
 
 
     public static bool Daily_1;

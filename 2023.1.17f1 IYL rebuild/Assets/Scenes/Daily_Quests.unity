@@ -561,9 +561,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'New Text
-
-    monkey'
+  m_text: Go get some bitches you fucking loser I hope you die and you will get your
+    fucking inheritance stolen by a fuckung gipsy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -626,7 +625,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -300.1494, y: -223.46887, z: -330.82178, w: -1210.617}
+  m_margin: {x: -334.46625, y: 90.28284, z: -330.82178, w: -867.4512}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1283,8 +1282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _img: {fileID: 1820553947}
-  _x: 0.1
-  _y: 0.1
+  _x: 0.05
+  _y: 0.05
 --- !u!114 &1820553947
 MonoBehaviour:
   m_ObjectHideFlags: 0
