@@ -43,8 +43,8 @@ public class StaticString : MonoBehaviour
     public static bool Weekly_4_completed;
 
 
-    public static List<string> different_quests = new List<string> { "fox", "Vogel", "Schmetterling", "Elefant", "Bär", "sorry no more quests" };
-    public static List<string> different_weekly_quests = new List<string> { "Yone", "Ezreal", "Fizz", "Soraka", "Lulu", " Sorry no more quests" };
+    public static List<string> different_quests = new List<string> { "fox", "Vogel", "Schmetterling", "Elefant", "Bär", "Du hast es geschafft! Du hast alle unsere Quests gemeistert!" };
+    public static List<string> different_weekly_quests = new List<string> { "Yone", "Ezreal", "Fizz", "Soraka", "Lulu", "Du hast es geschafft! Du hast alle unsere Quests gemeistert!" };
     public static List<int> used_quests = new List<int> { -1 };
     public static List<int> used_weekly_quests = new List<int> { -1 };
 
