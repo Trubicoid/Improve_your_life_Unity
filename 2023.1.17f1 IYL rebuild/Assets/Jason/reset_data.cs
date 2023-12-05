@@ -28,12 +28,12 @@ public void SaveToJason()
         data.q4 = -1;
         data.q5 = -1;
         data.q6 = -1;
-        data.qq1 = "";
-        data.qq2 = "";
-        data.qq3 = "";
-        data.qq4 = "";
-        data.qq5 = "";
-        data.qq6 = "";
+        data.qq1 = StaticString.dateCurrent_daily_1.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq2 = StaticString.dateCurrent_daily_2.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss"); ;
+        data.qq3 = StaticString.dateCurrent_weekly_1.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss"); ;
+        data.qq4 = StaticString.dateCurrent_weekly_2.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss"); ;
+        data.qq5 = StaticString.dateCurrent_weekly_3.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss"); ;
+        data.qq6 = StaticString.dateCurrent_weekly_4.AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ss"); ;
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(Application.persistentDataPath + "/SaveDataFile.json", json);

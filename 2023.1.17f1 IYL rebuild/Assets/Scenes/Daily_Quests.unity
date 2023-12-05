@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1dd2406e92536e44a039d7dd8b80865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quest_text_UI: {fileID: 0}
 --- !u!114 &85616557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1dd2406e92536e44a039d7dd8b80865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quest_text_UI: {fileID: 0}
 --- !u!114 &152231707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,7 +1563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6801912954988305853, guid: 974f2aa9d5a5c7047ad35ceba70bb4ba, type: 3}
+  m_Sprite: {fileID: -8804928483589998111, guid: 0d5da14aa5641d94cbb54a65ced804d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
