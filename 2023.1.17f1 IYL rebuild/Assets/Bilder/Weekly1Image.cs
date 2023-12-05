@@ -9,6 +9,13 @@ public class Weekly1Image : MonoBehaviour
     public Sprite new_image2;
     public Sprite new_image3;
     public Sprite new_image4;
+    public Sprite new_image5;
+    public Sprite new_image6;
+    public Sprite new_image7;
+    public Sprite new_image8;
+    public Sprite new_image9;
+    public Sprite new_image10;
+    public Sprite new_image11;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +44,34 @@ public class Weekly1Image : MonoBehaviour
         if (StaticString.quest_id_weekly_1 == 4)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image4;
+        }
+        if (StaticString.quest_id_weekly_1 == 5)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image5;
+        }
+        if (StaticString.quest_id_weekly_1 == 6)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image6;
+        }
+        if (StaticString.quest_id_weekly_1 == 7)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image7;
+        }
+        if (StaticString.quest_id_weekly_1 == 8)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image8;
+        }
+        if (StaticString.quest_id_weekly_1 == 9)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image9;
+        }
+        if (StaticString.quest_id_weekly_1 == 10)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image10;
+        }
+        if (StaticString.quest_id_weekly_1 == 11)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image11;
         }
     }
 }
