@@ -1,15 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Weekly1 : MonoBehaviour
 {
-public void Dailyhin() 
+    public TMP_Text quest_text_UI;
+    private void Update()
     {
-        StaticString.Weekly_1 = true;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
-        SceneManager.LoadScene("Daily_Quests");
+        if (!StaticString.T_Weekly_1)
+        {
+            DateTime temp = StaticString.dateCurrent_weekly_1.AddDays(7);
+            TimeSpan remainingTime = temp - DateTime.Now;
+            quest_text_UI.text = "Weekly 1 available in: \n" + remainingTime.Days + "days" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+        }
+        else
+        {
+            quest_text_UI.text = "Weekly 1";
+        }
+    }
+        public void Dailyhin() 
+    {
+        if (StaticString.T_Weekly_1)
+        {
+            StaticString.Weekly_1 = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+            SceneManager.LoadScene("Daily_Quests");
+        }
     } 
     public void DailyBack() 
     {

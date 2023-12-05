@@ -18,41 +18,47 @@ public class CompletedQuest : MonoBehaviour
             StaticString.Daily_1 = false;
             DateTime dateCurrent = DateTime.Now;
             StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.T_Daily_1 = false;
         }
         if (StaticString.Daily_2)
         {
             StaticString.Daily_2_completed = true;
             StaticString.Daily_2 = false;
             DateTime dateCurrent = DateTime.Now;
-            StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.dateCurrent_daily_2 = dateCurrent;
+            StaticString.T_Daily_2 = false;
         }
         if (StaticString.Weekly_1)
         {
             StaticString.Weekly_1_completed = true;
             StaticString.Weekly_1 = false;
             DateTime dateCurrent = DateTime.Now;
-            StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.dateCurrent_weekly_1 = dateCurrent;
+            StaticString.T_Weekly_1 = false;
         }
         if (StaticString.Weekly_2)
         {
             StaticString.Weekly_2_completed = true;
             StaticString.Weekly_2 = false;
             DateTime dateCurrent = DateTime.Now;
-            StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.dateCurrent_weekly_2 = dateCurrent;
+            StaticString.T_Weekly_2 = false;
         }
         if (StaticString.Weekly_3)
         {
             StaticString.Weekly_3_completed = true;
             StaticString.Weekly_3 = false;
             DateTime dateCurrent = DateTime.Now;
-            StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.dateCurrent_weekly_3 = dateCurrent;
+            StaticString.T_Weekly_3 = false;
         }
         if (StaticString.Weekly_4)
         {
             StaticString.Weekly_4_completed = true;
             StaticString.Weekly_4 = false;
             DateTime dateCurrent = DateTime.Now;
-            StaticString.dateCurrent_daily_1 = dateCurrent;
+            StaticString.dateCurrent_weekly_4 = dateCurrent;
+            StaticString.T_Weekly_4 = false;
         }
         StaticString.startup = false;
     }

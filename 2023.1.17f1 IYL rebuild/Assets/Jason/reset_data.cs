@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
+using NUnit.Framework.Constraints;
 
 public class reset_data : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public void SaveToJason()
         data.q4 = -1;
         data.q5 = -1;
         data.q6 = -1;
+        data.qq1 = "";
+        data.qq2 = "";
+        data.qq3 = "";
+        data.qq4 = "";
+        data.qq5 = "";
+        data.qq6 = "";
 
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(Application.persistentDataPath + "/SaveDataFile.json", json);
