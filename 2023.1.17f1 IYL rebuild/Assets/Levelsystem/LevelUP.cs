@@ -5,6 +5,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using System.IO;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelUP : MonoBehaviour
 {
@@ -83,6 +84,10 @@ public class LevelUP : MonoBehaviour
         if (StaticString.startup)
         {
             LoadFromJson();
+        }
+        if (StaticString.startup)
+        {
+            SceneManager.LoadScene("Daily_Quests");
         }
         maxValstatic.slidermaxvaluE = 100 + StaticString.LVL * 10;
         slider.value = 0;
