@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using System.IO;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class LevelUP : MonoBehaviour
 {
@@ -145,6 +146,17 @@ public class LevelUP : MonoBehaviour
 
     }
 
+    bool HasOneDayPassed(DateTime nowtime, DateTime last, int Days)
+    {
+        // Calculate the time difference between the current date and the last check date
+        TimeSpan timeDifference = nowtime - last;
+
+        // Check if at least one day has passed
+        return timeDifference.TotalDays >= Days;
+    }
+
+
+
     public void SaveToJason()
     {
         xpInputField = StaticString.Xpforcompletion.ToString();
@@ -162,6 +174,12 @@ public class LevelUP : MonoBehaviour
         data.q4 = StaticString.quest_id_weekly_2;
         data.q5 = StaticString.quest_id_weekly_3;
         data.q6 = StaticString.quest_id_weekly_4;
+        data.qq1 = StaticString.dateCurrent_daily_1.ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq2 = StaticString.dateCurrent_daily_2.ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq3 = StaticString.dateCurrent_weekly_1.ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq4 = StaticString.dateCurrent_weekly_2.ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq5 = StaticString.dateCurrent_weekly_3.ToString("yyyy-MM-ddTHH:mm:ss");
+        data.qq6 = StaticString.dateCurrent_weekly_4.ToString("yyyy-MM-ddTHH:mm:ss");
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(Application.persistentDataPath + "/SaveDataFile.json", json);
 
@@ -186,6 +204,12 @@ public class LevelUP : MonoBehaviour
         StaticString.quest_id_weekly_2 = data.q4;
         StaticString.quest_id_weekly_3 = data.q5;
         StaticString.quest_id_weekly_4 = data.q6;
+        StaticString.dateCurrent_daily_1 = DateTime.Parse(data.qq1);
+        StaticString.dateCurrent_daily_2 = DateTime.Parse(data.qq2);
+        StaticString.dateCurrent_weekly_1 = DateTime.Parse(data.qq3);
+        StaticString.dateCurrent_weekly_2 = DateTime.Parse(data.qq4);
+        StaticString.dateCurrent_weekly_3 = DateTime.Parse(data.qq5);
+        StaticString.dateCurrent_weekly_4 = DateTime.Parse(data.qq6);
         //Debug.Log(StaticString.used_quests.Count);
 
     }

@@ -1,17 +1,37 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    
-public void playGame() 
+    public TMP_Text quest_text_UI;
+    private void Update()
     {
-        StaticString.Daily_1 = true;
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
-        SceneManager.LoadScene("Daily_Quests");
+        if (!StaticString.T_Daily_1)
+        {
+            DateTime temp = StaticString.dateCurrent_daily_1.AddDays(1);
+            TimeSpan remainingTime = temp - DateTime.Now;
+            quest_text_UI.text = "Daily 1 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+        }
+        else
+        {
+            quest_text_UI.text = "Daily 1";
+        }
+
+
+    }
+    public void playGame() 
+    {
+        if(StaticString.T_Daily_1)
+        {
+            StaticString.Daily_1 = true;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+            SceneManager.LoadScene("Daily_Quests");
+        }
     } 
 public void Back() 
     {

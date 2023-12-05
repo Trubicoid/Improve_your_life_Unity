@@ -12,17 +12,16 @@ public class loading : MonoBehaviour
     void Start()
     {
         //load.SetActive(true);
-        uiImage.enabled = true;
+        if (StaticString.startup == false)
+        {
+            uiImage.enabled = false;
+        }
+        //uiImage.enabled = true;
         Debug.Log(StaticString.startup);
         if (StaticString.startup)
         {
             StaticString.startup = false;
             SceneManager.LoadScene("jiaming");
-        }
-
-        if (StaticString.startup ==false)
-        {
-            uiImage.enabled = false;
         }
     }
 

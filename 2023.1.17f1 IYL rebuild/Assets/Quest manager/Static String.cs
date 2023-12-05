@@ -18,12 +18,12 @@ public class StaticString : MonoBehaviour
     public static int quest_id_weekly_3 = -1;
     public static int quest_id_weekly_4 = -1;
 
-    public static DateTime dateCurrent_daily_1 = DateTime.Now;
-    public static DateTime dateCurrent_daily_2 = DateTime.Now;
-    public static DateTime dateCurrent_weekly_1 = DateTime.Now;
-    public static DateTime dateCurrent_weekly_2 = DateTime.Now;
-    public static DateTime dateCurrent_weekly_3 = DateTime.Now;
-    public static DateTime dateCurrent_weekly_4 = DateTime.Now;
+    public static DateTime dateCurrent_daily_1;
+    public static DateTime dateCurrent_daily_2;
+    public static DateTime dateCurrent_weekly_1;
+    public static DateTime dateCurrent_weekly_2;
+    public static DateTime dateCurrent_weekly_3;
+    public static DateTime dateCurrent_weekly_4;
 
 
     public static bool Daily_1;
@@ -33,6 +33,13 @@ public class StaticString : MonoBehaviour
     public static bool Weekly_2;
     public static bool Weekly_3;
     public static bool Weekly_4;
+
+    public static bool T_Daily_1;
+    public static bool T_Daily_2;
+    public static bool T_Weekly_1;
+    public static bool T_Weekly_2;
+    public static bool T_Weekly_3;
+    public static bool T_Weekly_4;
 
     public static bool Daily_1_completed;
     public static bool Daily_2_completed;

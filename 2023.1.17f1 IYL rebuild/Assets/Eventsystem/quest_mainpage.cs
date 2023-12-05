@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -15,7 +16,48 @@ public class quest_mainpage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TimeSpan d1d = DateTime.Now - StaticString.dateCurrent_daily_1;
+        TimeSpan d2d = DateTime.Now - StaticString.dateCurrent_daily_2;
+        TimeSpan d3d = DateTime.Now - StaticString.dateCurrent_weekly_1;
+        TimeSpan d4d = DateTime.Now - StaticString.dateCurrent_weekly_2;
+        TimeSpan d5d = DateTime.Now - StaticString.dateCurrent_weekly_3;
+        TimeSpan d6d = DateTime.Now - StaticString.dateCurrent_weekly_4;
+        if (d1d.TotalDays >= 1) 
+        {
+            StaticString.T_Daily_1 = true;
+        }
+
+
+        if (d2d.TotalDays >= 1)
+        {
+            StaticString.T_Daily_2 = true;
+        }
+
+
+        if (d3d.TotalDays >= 1)
+        {
+            StaticString.T_Weekly_1 = true;
+        }
+
+
+        if (d4d.TotalDays >= 1)
+        {
+            StaticString.T_Weekly_2 = true;
+        }
+
+
+        if (d5d.TotalDays >= 1)
+        {
+            StaticString.T_Weekly_3 = true;
+        }
+
+
+        if (d6d.TotalDays >= 1)
+        {
+            StaticString.T_Weekly_4 = true;
+        }
+
+
         if (StaticString.quest_id_daily_1 == -1)
         {
             if (StaticString.used_quests.Count == StaticString.different_quests.Count)
