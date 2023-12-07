@@ -11,18 +11,22 @@ public class NewBehaviourScript : MonoBehaviour
     public TMP_Text quest_text_UI;
     private void Update()
     {
-        if (!StaticString.T_Daily_1)
+        if (quest_text_UI != null)
         {
-            DateTime temp = StaticString.dateCurrent_daily_1.AddDays(1);
-            TimeSpan remainingTime = temp - DateTime.Now;
-            quest_text_UI.text = "Daily 1 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
-        }
-        else
-        {
-            quest_text_UI.text = "Daily 1";
-        }
 
 
+            if (!StaticString.T_Daily_1)
+            {
+                DateTime temp = StaticString.dateCurrent_daily_1.AddDays(1);
+                TimeSpan remainingTime = temp - DateTime.Now;
+                quest_text_UI.text = "Daily 1 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+            }
+            else
+            {
+                quest_text_UI.text = "Daily 1";
+            }
+
+        }
     }
     public void playGame() 
     {
