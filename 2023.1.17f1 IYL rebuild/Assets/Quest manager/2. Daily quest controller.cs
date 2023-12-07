@@ -10,15 +10,18 @@ public class NeuesScipt : MonoBehaviour
     public TMP_Text quest_text_UI;
     private void Update()
     {
-        if (!StaticString.T_Daily_2)
+        if (quest_text_UI != null)
         {
-            DateTime temp = StaticString.dateCurrent_daily_2.AddDays(1);
-            TimeSpan remainingTime = temp - DateTime.Now;
-            quest_text_UI.text = "Daily 2 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
-        }
-        else
-        {
-            quest_text_UI.text = "Daily 2";
+            if (!StaticString.T_Daily_2)
+            {
+                DateTime temp = StaticString.dateCurrent_daily_2.AddDays(1);
+                TimeSpan remainingTime = temp - DateTime.Now;
+                quest_text_UI.text = "Daily 2 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+            }
+            else
+            {
+                quest_text_UI.text = "Daily 2";
+            }
         }
     }
         public void Dailyhin() 
