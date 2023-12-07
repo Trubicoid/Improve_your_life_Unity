@@ -37,6 +37,7 @@ public class Imageloader : MonoBehaviour
     public Sprite new_image30;
     public Sprite new_image31;
     public Sprite new_image32;
+    public Sprite new_image33;
     // Start is called before the first frame update
     void Start()
     {
@@ -175,6 +176,10 @@ public class Imageloader : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image31;
         }
         if (StaticString.quest_id_daily_1 == 32)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image32;
+        }
+        if (StaticString.quest_id_daily_1 == 33)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image32;
         }
