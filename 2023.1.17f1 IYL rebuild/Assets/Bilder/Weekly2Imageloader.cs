@@ -15,7 +15,6 @@ public class Weekly2Imageloader : MonoBehaviour
     public Sprite new_image8;
     public Sprite new_image9;
     public Sprite new_image10;
-    public Sprite new_image11;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,10 +67,6 @@ public class Weekly2Imageloader : MonoBehaviour
         if (StaticString.quest_id_weekly_2 == 10)
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image10;
-        }
-        if (StaticString.quest_id_weekly_2 == 11)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = new_image11;
         }
     }
 }
