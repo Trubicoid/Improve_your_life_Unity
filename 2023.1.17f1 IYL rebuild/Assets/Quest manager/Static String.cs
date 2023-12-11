@@ -49,6 +49,8 @@ public class StaticString : MonoBehaviour
     public static bool Weekly_3_completed;
     public static bool Weekly_4_completed;
 
+    public static bool animation_;
+
 
     public static List<string> different_quests = new List<string> {
   "Gehe alleine auf einen mind. 20-minütigen Spaziergang.",
@@ -87,6 +89,45 @@ public class StaticString : MonoBehaviour
   "Erfinde eine Melodie auf einem Instrument.",
   "Du hast es Geschaft! Du hast alle Quests erledigt!"
 };
+    public static List<string> titel_daily = new List<string>
+    {
+"Spaziergang",
+"Joggen",
+"Kurzes Dehnen",
+"Ausfallschritt",
+"Dehnen",
+"Ganz Körper Dehnen",
+"Yoga",
+"Gespräch",
+"Positive Eigenschaften",
+"Positive Affirmationen",
+"Danke für...",
+"Was Stresst dich?",
+"3Dinge",
+"Was hast du gut gemacht",
+"Lächle",
+"Meditieren",
+"Atemübung beginnen.",
+"Liege, entspanne Muskeln.",
+"Auszeit, Musik fokussieren.",
+"Push-Benachrichtigungen aus.",
+"Smartphone pausiert, bewege dich.",
+"Magazin durchblättern.",
+"Etwas bauen versuchen.",
+"Rezept wählen, Neues backen.",
+"Kuchen/Muffins backen.",
+"Neues backen, dekorieren.",
+"Gesundes Rezept wählen.",
+"Obst kaufen, Früchteteller.",
+"Smoothie mit frischen Zutaten.",
+"Augen schließen, malen.",
+"Zeichnungs-Tutorial, Lieblingstier.",
+"Bank, Café, Landschaft skizzieren.",
+"Basteln, Google Inspiration.",
+"Melodie erfinden, Instrument.",
+"Keine Quest mehr!"
+
+    };
 
 
 
@@ -107,6 +148,25 @@ public class StaticString : MonoBehaviour
   "Nimm dir jeden Tag für eine Woche 15 Minuten Zeit, um das Jonglieren zu erlernen.",
         "Du hast es Geschaft! Du hast alle Quests erledigt!"
 };
+
+
+    public static List<string> titel_weekly = new List<string>
+    {
+"Konversation starten.",
+"Spazieren mit Freunden.",
+"Gegenseitig skizzieren.",
+"Beratung in Bibliothek.",
+"Kaffee trinken.",
+"Kino mit Freunden.",
+"Mit Fremden unterhalten.",
+"Digitale Pause.",
+"Buch lesen.",
+"Sprache lernen.",
+"Jonglieren üben.",
+"Keine Quest mehr!"
+
+
+    };
     public static List<int> used_quests = new List<int> { -1 };
     public static List<int> used_weekly_quests = new List<int> { -1 };
 

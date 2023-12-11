@@ -14,11 +14,11 @@ public class Weekly3 : MonoBehaviour
         {
             DateTime temp = StaticString.dateCurrent_weekly_3.AddDays(7);
             TimeSpan remainingTime = temp - DateTime.Now;
-            quest_text_UI.text = "Weekly 3 available in: \n" + remainingTime.Days + "days" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+            quest_text_UI.text = "Weekly available in\n" + remainingTime.Days + "days" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
         }
         else
         {
-            quest_text_UI.text = "Weekly 3";
+            quest_text_UI.text = "Weekly\n" + StaticString.titel_weekly[StaticString.quest_id_weekly_3];
         }
     }
     public void Dailyhin() 

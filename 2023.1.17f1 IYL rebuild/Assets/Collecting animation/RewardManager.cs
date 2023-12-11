@@ -24,6 +24,15 @@ public class RewardManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (StaticString.animation_)
+        {
+            RewardPileOfCoins(10);
+            StaticString.animation_ = false;
+
+        }
+    }
     private void Reset()
     {
         for (int i = 0; i < PileOfCoinParent.transform.childCount; i++)
@@ -34,7 +43,7 @@ public class RewardManager : MonoBehaviour
     }
 
     public void RewardPileOfCoins(int noCoin)
-    {
+    { 
         Reset();
 
 

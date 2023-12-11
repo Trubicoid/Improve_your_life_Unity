@@ -19,11 +19,11 @@ public class NewBehaviourScript : MonoBehaviour
             {
                 DateTime temp = StaticString.dateCurrent_daily_1.AddDays(1);
                 TimeSpan remainingTime = temp - DateTime.Now;
-                quest_text_UI.text = "Daily 1 available in: \n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+                quest_text_UI.text = "Daily available in\n" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
             }
             else
             {
-                quest_text_UI.text = "Daily 1";
+                quest_text_UI.text = "Daily\n" + StaticString.titel_daily[StaticString.quest_id_daily_1];
             }
 
         }
