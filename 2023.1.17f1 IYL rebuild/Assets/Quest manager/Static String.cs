@@ -72,6 +72,7 @@ public class StaticString : MonoBehaviour
   "Nimm dir eine Auszeit, höre deine Lieblingsplaylist und konzentriere dich voll und ganz auf die Musik.",
   "Schalte möglichst viele Push-Benachrichtigungen aus.",
   "Lege das Smartphone für 1h weg und bewege dich.",
+  "Stöbere ein wenig in einem Magazin.",
   "Versuche etwas selbst zu bauen.",
   "Suche dir ein Rezept aus dem Internet und backe etwas Neues.",
   "Backe einen Kuchen/Muffins.",
