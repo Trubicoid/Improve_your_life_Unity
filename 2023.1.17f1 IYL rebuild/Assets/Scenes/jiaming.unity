@@ -295,6 +295,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!212 &33547927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -514,6 +515,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!212 &39309081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -810,6 +812,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!1 &167953862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2271,7 @@ MonoBehaviour:
   new_image31: {fileID: 8109676860759142564, guid: 836abaf325d80ea4fb7d8043a25de486, type: 3}
   new_image32: {fileID: -1758663509584945278, guid: 30b6b24edb0bffc4097b9492da1b42e7, type: 3}
   new_image33: {fileID: -4847948122234914433, guid: 695d4479ff08cdb49b485cbcb7531025, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!212 &443039207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4721,6 +4725,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!212 &1084563857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7205,6 +7210,7 @@ MonoBehaviour:
   new_image31: {fileID: 8109676860759142564, guid: 836abaf325d80ea4fb7d8043a25de486, type: 3}
   new_image32: {fileID: -1758663509584945278, guid: 30b6b24edb0bffc4097b9492da1b42e7, type: 3}
   new_image33: {fileID: -4847948122234914433, guid: 695d4479ff08cdb49b485cbcb7531025, type: 3}
+  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
 --- !u!114 &1938066022
 MonoBehaviour:
   m_ObjectHideFlags: 0
