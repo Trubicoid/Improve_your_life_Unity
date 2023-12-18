@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lock-icon-clipart-7-1_0: -5109768388164615554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

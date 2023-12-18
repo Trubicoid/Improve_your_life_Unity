@@ -55,7 +55,7 @@ public class RewardManager : MonoBehaviour
         {
             PileOfCoinParent.transform.GetChild(i).DOScale(1f, 0.3f).SetDelay(delay).SetEase(Ease.OutBack);
 
-            PileOfCoinParent.transform.GetChild(i).GetComponent<RectTransform>().DOAnchorPos(new Vector2(-547f, 1250f), 1f).SetDelay(delay + 0.5f).SetEase(Ease.InBack);
+            PileOfCoinParent.transform.GetChild(i).GetComponent<RectTransform>().DOAnchorPos(new Vector2(-547f, 1420f), 1f).SetDelay(delay + 0.5f).SetEase(Ease.InBack);
 
             PileOfCoinParent.transform.GetChild(i).DORotate(Vector3.zero, 0.5f).SetDelay(delay + 0.5f).SetEase(Ease.Flash);
 
