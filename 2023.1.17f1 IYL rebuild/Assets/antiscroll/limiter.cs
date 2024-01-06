@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class limiter : MonoBehaviour
 {
     public ScrollRect scrollRect;
-    public float maxScrollLimit = 0.78f;
+    public float maxScrollLimit = 0.65f;
 
     void Update()
     {
