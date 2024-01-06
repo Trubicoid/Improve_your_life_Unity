@@ -14,7 +14,7 @@ public class Weekly1 : MonoBehaviour
         {
             DateTime temp = StaticString.dateCurrent_weekly_1.AddDays(7);
             TimeSpan remainingTime = temp - DateTime.Now;
-            quest_text_UI.text = "Weekly available in\n" + remainingTime.Days + "days" + remainingTime.Hours + "hours" + remainingTime.Minutes + "minutes";
+            quest_text_UI.text = "Weekly available in\n" + remainingTime.Days + " days" + remainingTime.Hours + " hours" + remainingTime.Minutes + " minutes";
         }
         else
         {
