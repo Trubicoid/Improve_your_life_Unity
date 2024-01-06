@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9d74b3a63e361ac409aadb776ac140e2
+guid: 5513f9dcd71d36e469f3c1a514a8117c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6849916245805556265
-    second: 3.2 resize_0
+      213: -5671576777849879467
+    second: Bararisch_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3.2 resize_0
+      name: Bararisch_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 568
-        height: 378
+        width: 52
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7dd1593877530f0a0800000000000000
-      internalID: -6849916245805556265
+      spriteID: 55447e748f28a41b0800000000000000
+      internalID: -5671576777849879467
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      3.2 resize_0: -6849916245805556265
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

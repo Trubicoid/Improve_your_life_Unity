@@ -295,7 +295,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
 --- !u!212 &33547927
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
 --- !u!212 &39309081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -812,7 +812,91 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
+--- !u!1 &104075215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 104075216}
+  - component: {fileID: 104075217}
+  m_Layer: 7
+  m_Name: imageraster_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &104075216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104075215}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1720.385, y: 7733, z: 0}
+  m_LocalScale: {x: 256, y: 256, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 975732972}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &104075217
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104075215}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: -3867356263580920511, guid: 0c7c6fbf0fea68741b62d8f4f5fb5c98, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.67, y: 3.78}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &167953862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,7 +2355,7 @@ MonoBehaviour:
   new_image31: {fileID: 8109676860759142564, guid: 836abaf325d80ea4fb7d8043a25de486, type: 3}
   new_image32: {fileID: -1758663509584945278, guid: 30b6b24edb0bffc4097b9492da1b42e7, type: 3}
   new_image33: {fileID: -4847948122234914433, guid: 695d4479ff08cdb49b485cbcb7531025, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
 --- !u!212 &443039207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4099,7 +4183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c295840959206704584d93e84c5d87da, type: 3}
+  m_Sprite: {fileID: -5671576777849879467, guid: 5513f9dcd71d36e469f3c1a514a8117c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4505,6 +4589,7 @@ RectTransform:
   - {fileID: 39309082}
   - {fileID: 33547928}
   - {fileID: 2101887801}
+  - {fileID: 104075216}
   m_Father: {fileID: 359981476}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4740,7 +4825,7 @@ MonoBehaviour:
   new_image8: {fileID: -6906357623315950566, guid: 1d94b4b76b5b9f54cb52aeccef01c1e4, type: 3}
   new_image9: {fileID: -6369261415567116318, guid: 3bc0ecad9c709a74eb51acddc904ab6d, type: 3}
   new_image10: {fileID: -6749052262818100703, guid: 74e2852f6408b6e4c90a1b5960d4fd60, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
 --- !u!212 &1084563857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7225,7 +7310,7 @@ MonoBehaviour:
   new_image31: {fileID: 8109676860759142564, guid: 836abaf325d80ea4fb7d8043a25de486, type: 3}
   new_image32: {fileID: -1758663509584945278, guid: 30b6b24edb0bffc4097b9492da1b42e7, type: 3}
   new_image33: {fileID: -4847948122234914433, guid: 695d4479ff08cdb49b485cbcb7531025, type: 3}
-  lock_image: {fileID: 7047977595361286569, guid: b6e93d8db54f2b046a3d8369ff1669d4, type: 3}
+  lock_image: {fileID: -6849916245805556265, guid: 9d74b3a63e361ac409aadb776ac140e2, type: 3}
 --- !u!114 &1938066022
 MonoBehaviour:
   m_ObjectHideFlags: 0
