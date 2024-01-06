@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bararisch_0: -5671576777849879467
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
