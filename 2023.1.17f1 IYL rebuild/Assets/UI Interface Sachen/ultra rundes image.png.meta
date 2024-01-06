@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ultra rundes image_0: 675282358479428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

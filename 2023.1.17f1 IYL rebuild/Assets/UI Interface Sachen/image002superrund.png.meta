@@ -152,7 +152,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      image002superrund_0: -3867356263580920511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
